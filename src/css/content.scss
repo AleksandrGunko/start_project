@@ -1,0 +1,244 @@
+body{
+	font-family: sans-serif;
+}
+.main_container{
+    max-width: 835px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.product{
+	img{
+		margin-top: 25px;
+	 	height: auto;
+	    background: #eceeef;
+	    padding: 10px 60px 10px 60px;
+	}
+	h1{
+	    letter-spacing: -1.7px;
+	    font-size: 26px;
+	    font-weight: bold;
+	    display: inline-block;
+	    padding-right: 46px;
+	    text-align: right;   
+	}
+	.code{
+	    letter-spacing: 1px;
+	    font-size: 10px;
+	    color: #a5a2a7;
+	    text-align: -webkit-auto;
+	    width: 100%;
+	}
+	&_price{
+		float: left;
+		.strike {
+			font-size: 30px;
+			font-weight: bold;
+			text-decoration: line-through;
+		}
+		.price {
+			font-size: 30px;
+			font-weight: bold;
+			color: red;
+			margin-left:20px; 
+		}
+	}
+
+	&_star {
+		padding: 0;
+		display: inline-block;
+		li{
+			color: red;
+			display: inline-block;
+			list-style: none;
+		}
+	}
+	&_details{
+		h2 {
+		    width: 100%;
+		    text-align: -webkit-auto;
+		}
+		p{
+		    font-size: 12px;
+		    letter-spacing: 1px;
+			font-family: "OpenSans";
+		    text-align: -webkit-left;
+		    display: inline-block;
+
+		}
+	}
+
+	h2 {
+	    width: 100%;
+	    display: inline-block;
+	    text-align: -webkit-auto;
+		font-size: 17px;
+	    font-weight: bold;
+	}
+	
+	&_info {
+	    width:85px;
+	    display: inline-block;
+	    position: relative;
+	    margin-left: 20px;
+	    cursor: pointer;
+	    font-size: 20px;
+	    margin-left: 20px;
+	    font-weight: bold;
+	    color: #358ae4;
+	    padding-left:0px;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		margin-left: 20px;
+	    font-family: sans-serif;
+	    font-weight: bold;
+	    color: #12c0f5;
+	    font-size: 16px;
+
+	    &:hover .product_socials {
+			display: block;
+		}
+	}
+
+	&_socials{
+		margin-left: -50px;
+	    width: 200px;
+	    position: absolute;
+	    background-color: #fff;
+	    top: 30px;
+	    display: none;
+	    z-index: 9999;
+	    box-shadow: 0 3px 1px 0 rgba(0,0,0,0.24), 1px 1px 2px 2px rgba(0,0,0,0.19);
+	    background-color: white;
+		
+		p {
+			text-align: left;
+		}
+		ul{
+			padding-left: 0px;
+		    margin-left: 10px;
+		
+			 li {
+				width: 30px;
+			    height: 30px;
+			    display: inline-block;
+			    text-align: center;
+			    border: 2px solid #56b7dc;
+			    @include border-radius(50%);
+			    line-height: 28px;
+			    margin-right: 3px;
+				list-style: none;
+			}
+		}
+	}
+
+    &_size{
+    	text-align: left;
+    
+		ul {
+		padding-left: 0px;
+		display: inline-block;
+		    li{
+			display: inline-block;
+			list-style: none;
+				a {
+					width: 35px;
+				    height: 35px;
+				    display: inline-block;
+				    text-align: center;
+				    border: 1px solid #040404;
+				    color: #000;
+				    @include border-radius(50%);
+				    line-height: 30px;
+				    margin-right: 7px;
+				    -webkit-transition-duration: 0.4s; 
+				    transition-duration: 0.4s;
+				    text-decoration: none;
+				    font-weight: bold;
+				    font-size: 11px;
+
+					&:hover {
+						background-color: #000; 
+					    color: white;
+					}
+				} 
+		    }
+		}
+	}
+	&_buy{
+	    float: left;
+		margin: 40px 0 0 0;	
+		a{
+			font-family: sans-serif;
+			font-weight: bold;
+			border: none;
+		    width: 200px;
+		    height: 50px;
+		    @include border-radius(37px);
+	        transition: .5s;
+		    background-color: #83ece8;
+	        padding: 15px 60px 15px 60px;
+    		text-decoration: none;
+
+    		&:hover {
+			    background-color: #2ef5ed;
+			    color: white;
+			}	
+		}
+		
+	}
+
+}
+	
+.product_galery h3{
+    text-align: -webkit-auto;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.container{
+    max-width: 835px;
+}
+.item_gallery{
+	margin:15px 0 15px 0;
+}
+.item_gallery>div{
+    position: relative;
+    width:100%;
+}
+.item_image {
+    width: 100%;
+    height: auto
+}
+.item_price {
+    bottom: 40px;
+    right: 0;
+    margin: 0;
+    width: auto;
+    position: absolute;
+    padding: 0px 10px;
+    overflow: hidden;
+    background: #3499da;
+    opacity: 0.8;
+
+    span {
+	font-family: sans-serif;
+    font-size: 20px; 
+	}
+}
+.product_sale_price{
+	text-decoration: line-through;
+}
+.product_new_price{
+	color: red;
+}
+.gallery_nav {
+	display: none;
+}
+
+
+ 

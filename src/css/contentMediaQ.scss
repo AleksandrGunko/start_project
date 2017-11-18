@@ -1,0 +1,200 @@
+@media #{$iPad}{
+.container {
+    h3 {
+        text-align: center;
+        word-spacing: 8px;
+        letter-spacing: 1px;
+    } 
+
+    h1 {
+        width: 100%;    
+        text-align: left;
+        margin-left: 15px;
+    }
+
+
+    img{
+        margin-top:0px;
+    }
+}
+    .galery_product .item_gallery{
+        display: inline-block;
+        width: calc(50%);
+        position: relative;
+
+       .item_price {
+        bottom: 0px;
+        text-align: center;
+        left: 0;
+        right:0;
+        }
+    }
+   .product{
+
+    &_price{
+        float: left;
+    }
+
+    &_star {
+        float: left;
+    }    
+    p1 {
+        display: none;
+    }
+    
+    &_info {
+       display: none;       
+    }
+    &_size{
+        ul{   
+            padding-left: 0px;
+            display: inline-block;
+            li{
+                display: inline-block;
+                list-style: none;
+                a {
+                    width: 35px;
+                    height: 35px;
+                    display: inline-block;
+                    text-align: center;
+                    border: 1px solid #040404;
+                    color: #000;
+                    margin-right: 23px;
+                    @include border-radius(50%);
+                    line-height: 30px;
+                    -webkit-transition-duration: 0.4s; 
+                    transition-duration: 0.4s;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 11px;
+
+                    &:hover {
+                        background-color: #000; 
+                        color: white;
+                    }
+                } 
+            }
+        }
+    } 
+    &_buy{
+        float: left;
+        margin: 40px 0 0 0; 
+        a{
+            font-family: sans-serif;
+            font-weight: bold;
+            border: none;
+            width: 200px;
+            height: 50px;
+            @include border-radius(37px);
+            transition: .5s;
+            background-color: #83ece8;
+            padding: 15px 60px 15px 60px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #2ef5ed;
+                color: white;
+            }   
+        }    
+    }
+
+    }
+}
+
+@media #{$mobileMode}{
+
+    .main_img {
+        img{
+            width: 100%;
+        }
+    }
+    .product {
+        h1 {
+            text-align: left;
+            letter-spacing: -2px;
+            margin-left: 14px;
+        }
+        &_buy{
+            margin-top: 20px;
+            width: 100%;
+            padding: 0 20px; 
+            a {
+                display: block;
+                width: 100%;
+            }
+        }
+        &_price {       
+            text-align: center;
+            left: 0;
+            right:0;
+            padding: 7px 10px;
+        }
+        &_size{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    /*.gallery_container {
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+        font-size: 0;
+        position: relative
+    }*/
+    .product_galery h3{
+        margin-top: 30px;
+    }
+    .item_gallery {
+        display: inline-block;
+        margin: 0 0 20px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 1s;
+
+        &>div{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .item_price {
+        position: relative;
+        bottom: 40px;
+        text-align: center;
+        left: 0;
+        right:0;
+        padding: 7px 10px;
+    }
+    .product_galery .showing {
+        opacity: 1;
+        z-index: 2;
+    }
+    .gallery_nav {
+        display: block;
+        margin-top: 50%;
+        cursor: pointer;
+    }
+     #previous {
+        display: inline-block;
+        left: 20px;
+        position: absolute;
+        z-index: 99999;
+        cursor: pointer;
+    }
+     #next {
+        display: inline-block;
+        right: 20px;
+        position: absolute;
+        z-index: 99999;
+        cursor: pointer;
+    }
+    .controls i {
+        font-size: 31px;
+        color: #fff;
+    }
+}
+

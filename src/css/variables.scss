@@ -8,3 +8,30 @@ $white: #fff;
 $inputTextColor: #272b3c;
 $greenHvr: #99de4d;
 $textColor: #272b3c;
+
+
+$mediumDesktopMode: "screen and (max-width: 1440px)";
+$smallDesktopMode: "screen and (max-width: 1280px)";
+$tableMode: "screen and (max-width: 1080px)";
+$mobileMode: "screen and (max-width: 740px)";
+$xsMobileMode: "screen and (max-width: 420px)";
+$iPhone5: "only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2)";
+$iPhone6: "only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)";
+$iPhone6plus: "only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)";
+$iPad: "only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1)";
+$iPadAir: "only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)";
